@@ -1,0 +1,22 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": true,
+    "rewrites": [
+      {
+        "source": "/admin/**",
+        "destination": "/admin/index.html"
+      },
+      {
+        "source": "!(**/*.html|**/*.js|**/*.css|**/*.png|**/*.jpg|**/*.jpeg|**/*.svg|**/*.webp|**/*.json|**/*.ico|**/*.map)",
+        "destination": "/404.html"
+      }
+    ]
+  }
+}

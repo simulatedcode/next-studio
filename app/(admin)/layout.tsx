@@ -1,0 +1,18 @@
+export const metadata = {
+    title: "Sanity Studio",
+    description: "Administrative interface for your content",
+};
+
+export default function AdminLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <html lang="en">
+            <body style={{ margin: 0 }}>
+                {children}
+            </body>
+        </html>
+    );
+}
